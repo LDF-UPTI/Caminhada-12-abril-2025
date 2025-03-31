@@ -19,8 +19,8 @@
             margin: auto;
             padding: 2rem;
             text-align: center;
-            background: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background to improve readability */
-            border-radius: 10px; /* Add rounded corners to the container */
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
         }
 
         img.logo {
@@ -60,6 +60,20 @@
             height: 450px;
             border-radius: 8px;
         }
+
+        input[type="submit"] {
+            background-color: #2a7ae2;
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1d5fb8;
+        }
     </style>
 </head>
 <body>
@@ -68,12 +82,13 @@
 
         <h1>Manhã de Caminhada – 12 de Abril de 2025</h1>
         <p>Junta-te a nós para uma caminhada de 10 km ao ar livre, num ambiente de convívio, saúde e bem-estar!</p>
+        <p><strong>Leva a tua família contigo — o convite é extensível a todos, grandes e pequenos! Vamos celebrar juntos a saúde, a natureza e os bons momentos.</strong></p>
 
         <section>
             <div class="info-box">
                 <h2>📍 Local</h2>
-                <p>Ponto de encontro: 38°47'43.9"N 9°05'42.7"W</p>
-                <p>Ponto de retorno: 38°49'40.8"N 9°04'46.3"W</p>
+                <p><strong>Ponto de encontro:</strong> 38.796033, -9.094319</p>
+                <p><strong>Ponto de retorno:</strong> 38.832684, -9.077396</p>
             </div>
 
             <div class="info-box">
@@ -96,10 +111,13 @@
                 <form action="https://formspree.io/f/xldjwkgo" method="post">
                     <label for="name">Nome:</label><br>
                     <input type="text" id="name" name="name" required><br><br>
+
                     <label for="email">Email:</label><br>
                     <input type="email" id="email" name="email" required><br><br>
+
                     <label for="age">Idade:</label><br>
                     <input type="number" id="age" name="age" required><br><br>
+
                     <input type="submit" value="Inscrever-se">
                 </form>
             </div>
@@ -107,7 +125,7 @@
             <h2>🗺️ Percurso da Caminhada</h2>
             <p>Consulta abaixo o percurso previsto entre os pontos principais:</p>
             <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d4987.313012781684!2d-9.0965015!3d38.7955301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m3!3m2!1d38.795528!2d-9.095[...]"
+                src="https://www.google.com/maps/dir/38.796071,-9.0944681/38.8326841,-9.0773957/@38.8014779,-9.0963525,2025m/data=!3m1!1e3!4m5!4m4!1m0!1m1!4e1!3e2?hl=pt-PT&entry=ttu" 
                 allowfullscreen="" 
                 loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade">
@@ -120,4 +138,5 @@
     </div>
 </body>
 </html>
+
 
