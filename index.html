@@ -30,19 +30,18 @@
       box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
 
-    .cancelado-banner {
+    .cancelado-banner-local {
       position: absolute;
-      top: 30px;
-      left: -50px;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-15deg);
       background: red;
       color: white;
-      padding: 10px 80px;
-      transform: rotate(-45deg);
-      font-size: 1.5rem;
+      padding: 8px 60px;
+      font-size: 1.8rem;
       font-weight: bold;
-      text-align: center;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
-      z-index: 10;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      z-index: 5;
       pointer-events: none;
     }
 
@@ -113,9 +112,11 @@
 <body>
   <div class="overlay">
     <div class="container">
-      <div class="cancelado-banner">CANCELADO</div>
-
+      
       <img src="logo-pizza.png" alt="Logotipo da Empresa" class="logo" />
+
+      <!-- Faixa CANCELADO dentro do corpo da mensagem -->
+      <div class="cancelado-banner-local">CANCELADO</div>
 
       <h1>Manhã de Caminhada – 12 de Abril de 2025</h1>
       <p>Junta-te a nós para uma caminhada de 10 km ao ar livre, num ambiente de convívio, saúde e bem-estar!</p>
@@ -125,9 +126,9 @@
         <div class="info-box">
           <h2>📍 Local</h2>
           <p><strong>Ponto de encontro:</strong> 
-          <a href="https://www.google.com/maps?q=38.796033,-9.094319" target="_blank" rel="noopener noreferrer" style="font-weight: normal; text-decoration: none; color: #2a7ae2;">
-          Praça Mar da Palha
-        </a> 📍 <span style="color: #555;">38.796033, -9.094319</span>
+            <a href="https://www.google.com/maps?q=38.796033,-9.094319" target="_blank" rel="noopener noreferrer" style="font-weight: normal; text-decoration: none; color: #2a7ae2;">
+              Praça Mar da Palha
+            </a> 📍 <span style="color: #555;">38.796033, -9.094319</span>
           </p>
 
           <p><strong>Ponto de retorno:</strong> 
@@ -157,20 +158,6 @@
           <div class="form-disabled">
             As inscrições estão temporariamente fora de serviço.
           </div>
-          <!--
-          <form action="https://formspree.io/f/xldjwkgo" method="post">
-            <label for="name">Nome:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-
-            <label for="comentarios">Comentários:</label><br>
-            <textarea id="comentarios" name="comentarios" rows="2" cols="40"></textarea><br><br>
-
-            <input type="submit" value="Inscrever-se" />
-          </form>
-          -->
         </div>
 
         <h2>🗺️ Percurso da Caminhada</h2>
